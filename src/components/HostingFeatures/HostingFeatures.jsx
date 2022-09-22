@@ -476,7 +476,7 @@ export const HostingFeatures = () => {
           </div>
           <div className="bottom-btn">
             <button onClick={() => setShowFeatures(!showFeatures)}>
-              See All Features{" "}
+              {showFeatures ? "See Less Features":"See All Features"}
               <img
                 src={caretDown}
                 alt="img"

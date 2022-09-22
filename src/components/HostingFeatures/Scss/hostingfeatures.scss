@@ -126,12 +126,14 @@ $light-blue: #00d0ff;
         font-weight: 600;
         cursor: pointer;
         transition: 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 5px;
         &:hover {
           opacity: 0.75;
         }
         img {
           position: relative;
-          top: -2px;
           width: 15px;
         }
       }
@@ -154,7 +156,7 @@ $light-blue: #00d0ff;
         height: max-content;
         margin: 2rem 0;
         @media (max-width:768px) {
-          justify-content: center;
+          // justify-content: center;
           margin: 1.5rem 0;
         }
         > img {
@@ -317,7 +319,7 @@ $light-blue: #00d0ff;
       border-bottom-right-radius: 12px;
       @media (max-width: 768px) {
         order: 2;
-        padding: 0 2rem;
+        padding: 0 3rem;
       }
     }
     .fifth, .sixth, .seventh{

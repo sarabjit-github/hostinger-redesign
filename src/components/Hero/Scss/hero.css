@@ -206,6 +206,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .hero .left .hero-txt p {
+    max-width: 470px;
+  }
+}
+
 .hero .left .timer {
   margin-top: 10px;
   display: -webkit-box;
@@ -421,9 +427,9 @@
 @media (max-width: 1200px) {
   .hero .left .timer button::after {
     display: block;
-    -webkit-transform: scale(0.5, 0.7) translateX(140px) rotate(120deg);
-            transform: scale(0.5, 0.7) translateX(140px) rotate(120deg);
-    bottom: -82%;
+    -webkit-transform: scale(0.5, 0.6) translateX(120px) rotate(120deg);
+            transform: scale(0.5, 0.6) translateX(120px) rotate(120deg);
+    bottom: -120%;
   }
 }
 

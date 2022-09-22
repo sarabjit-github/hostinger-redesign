@@ -167,6 +167,9 @@ $light-blue: #00d0ff;
         max-width: 500px;
         @include font-p1();
         color: $black;
+        @media (max-width:576px) {
+          max-width: 470px;
+        }
       }
     }
     .timer {
@@ -281,8 +284,8 @@ $light-blue: #00d0ff;
           }
           @media (max-width: 1200px) {
             display: block;
-            transform: scale(0.5, 0.7) translateX(140px) rotate(120deg);
-            bottom: -82%;
+            transform: scale(0.5, 0.6) translateX(120px) rotate(120deg);
+            bottom: -120%;
           }
           @media (max-width: 576px) {
             display: block;
