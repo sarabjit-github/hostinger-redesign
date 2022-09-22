@@ -47,4 +47,9 @@ button {
 .hero-page {
   background: linear-gradient(15deg, white 0%, white 25%, white 35%, rgba(72, 255, 185, 0.15) 50%, rgba(250, 234, 255, 0.15) 60%, #fcfcfc 70%, #fcfcfc 75%, white 100%);
 }
+
+.bg {
+  padding-top: 8rem;
+  background: linear-gradient(15deg, white 0%, white 25%, white 35%, rgba(72, 255, 185, 0.15) 50%, rgba(250, 234, 255, 0.15) 60%, #fcfcfc 70%, #fcfcfc 75%, white 100%);
+}
 /*# sourceMappingURL=App.css.map */

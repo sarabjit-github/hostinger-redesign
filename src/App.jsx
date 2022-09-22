@@ -20,7 +20,9 @@ function App() {
       <FindDomain />
       <IllusSection />
       <ControlPanel />
-      <Footer />
+      <div className="bg">
+        <Footer />
+      </div>
     </div>
   );
 }

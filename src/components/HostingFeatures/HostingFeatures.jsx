@@ -26,7 +26,10 @@ export const HostingFeatures = () => {
         </div>
         <div
           className="lower-block"
-          style={{ height: showFeatures ? "100%" : "", overflow: showFeatures ? "visible":"hidden" }}
+          style={{
+            height: showFeatures ? "100%" : "",
+            overflow: showFeatures ? "visible" : "hidden",
+          }}
         >
           <div className="first">
             <div className="feature">
@@ -77,119 +80,7 @@ export const HostingFeatures = () => {
                 </span>
               </div>
             </div>
-            <div className="fake-height fake-left"></div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
+            {/* <div className="fake-height fake-left"></div> */}
           </div>
           <div className="second">
             <div className="feature-price">
@@ -201,147 +92,7 @@ export const HostingFeatures = () => {
               </div>
               <button className="primary-btn">Select</button>
             </div>
-            <div className="fake-height fake-center"></div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>100 GB</span> SSD Storage
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
-            <div className="feature">
-              <img src={tickImg} alt="true" />
-              <p>
-                <span>Free</span> Weekly Backups
-              </p>
-              <div className="tooltip">
-                <img src={questionMark} alt="true" />
-                <span className="tooltip-txt">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  iusto dolores mollitia praesentium, magni dicta soluta neque.
-                  Sunt, odit earum?
-                </span>
-              </div>
-            </div>
+            {/* <div className="fake-height fake-center"></div> */}
           </div>
           <div className="third">
             <div className="feature">
@@ -400,7 +151,12 @@ export const HostingFeatures = () => {
                 </span>
               </div>
             </div>
-            <div className="fake-height fake-right"></div>
+            {/* <div className="fake-height fake-right"></div> */}
+          </div>
+          <div className="mid-plan-heading fourth">
+            <h2>Plan Features</h2>
+          </div>
+          <div className="fifth">
             <div className="feature">
               <img src={tickImg} alt="true" />
               <p>
@@ -462,8 +218,261 @@ export const HostingFeatures = () => {
               </div>
             </div>
           </div>
-          <div className="mid-plan-heading">
-            <h2>Plan Features</h2>
+          <div className="sixth">
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="seventh">
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>100 GB</span> SSD Storage
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
+            <div className="feature">
+              <img src={tickImg} alt="true" />
+              <p>
+                <span>Free</span> Weekly Backups
+              </p>
+              <div className="tooltip">
+                <img src={questionMark} alt="true" />
+                <span className="tooltip-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  iusto dolores mollitia praesentium, magni dicta soluta neque.
+                  Sunt, odit earum?
+                </span>
+              </div>
+            </div>
           </div>
           <div className="bottom-btn">
             <button onClick={() => setShowFeatures(!showFeatures)}>
