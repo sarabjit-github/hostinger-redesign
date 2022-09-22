@@ -3,7 +3,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
   color: #1e1926;
 }
 
@@ -28,13 +28,13 @@
 
 @media (max-width: 668px) {
   .sec-heading {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 }
 
 @media (max-width: 450px) {
   .sec-heading {
-    margin: 0.75rem 0;
+    margin: 0.5rem 0;
   }
 }
 

@@ -12,6 +12,7 @@ import wordpressInstall from "../../img/litespeed-wp.svg";
 import techSupport from "../../img/wp-installation.svg";
 import scriptInstall from "../../img/script-installer.svg";
 import uptimeGt from "../../img/uptime-guarantee.svg";
+import { motion } from "framer-motion";
 
 export const Services = () => {
   return (
@@ -20,7 +21,13 @@ export const Services = () => {
         Our <span>Services</span> Include
       </h1>
       <div className="services-con">
-        <div className="service">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -36,8 +43,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>Free SSL</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -56,8 +69,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>Access Management</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -73,8 +92,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>eCommerce Optimization</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -91,8 +116,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>Free Migration</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -112,8 +143,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>Automated backups</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -133,8 +170,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>DDoS Protection</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -150,8 +193,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>PHP Speed Boost</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -167,8 +216,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>LiteSpeed Cache Plugin</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -185,8 +240,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>One-Click WordPress Installation</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -206,8 +267,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>24/7/365 Tech Support</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -227,8 +294,14 @@ export const Services = () => {
             </svg>
           </div>
           <h3>Auto Script Installer</h3>
-        </div>
-        <div className="service">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+          viewport={{ once: true }}
+          className="service"
+        >
           <div>
             <svg
               fill="none"
@@ -246,7 +319,7 @@ export const Services = () => {
             </svg>
           </div>
           <h3>99.9% Uptime Guarantee</h3>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

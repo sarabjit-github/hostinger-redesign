@@ -5,7 +5,7 @@
 
 @media (max-width: 576px) {
   .section {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 
@@ -529,6 +529,7 @@
   border-radius: 12px;
   outline: 4px solid #1e1926;
   outline-offset: 4px;
+  z-index: 22;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }

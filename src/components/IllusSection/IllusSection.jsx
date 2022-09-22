@@ -5,12 +5,19 @@ import fastLoadingIllus from "../../img/fast_loading-illus.png";
 import wordpressIllus from "../../img/wordpress-illustration.png";
 import scaleIllus from "../../img/large-scale-illus.png";
 import supportIllus from "../../img/active_support-illus.png";
+import { motion } from "framer-motion";
 
 export const IllusSection = () => {
   return (
     <section className="section mid-sec">
       <div className="illus-container first-illus">
-        <div className="left">
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="left"
+        >
           <h3 className="sm-heading">Easy to use and simple</h3>
           <h1>Easy to set up</h1>
           <p>
@@ -18,13 +25,25 @@ export const IllusSection = () => {
             Everything you need - provided in a clear way.
           </p>
           <button className="primary-btn">Learn more</button>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="right"
+        >
           <img src={easyUseIllus} alt="Easy to use and simple" />
-        </div>
+        </motion.div>
       </div>
       <div className="illus-container second-illus">
-        <div className="left">
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="left"
+        >
           <h3 className="sm-heading">Performance and speed</h3>
           <h1>Lightning-fast websites</h1>
           <p>
@@ -32,13 +51,25 @@ export const IllusSection = () => {
             with a fast-loading and optimized website.
           </p>
           <button className="primary-btn">Learn more</button>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="right"
+        >
           <img src={fastLoadingIllus} alt="Performance and speed" />
-        </div>
+        </motion.div>
       </div>
       <div className="illus-container third-illus">
-        <div className="left">
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="left"
+        >
           <h3 className="sm-heading">Great wordpress experience</h3>
           <h1>WordPress made easy</h1>
           <p>
@@ -47,13 +78,25 @@ export const IllusSection = () => {
             optimization to ensure your websites are fast, reliable and secure.
           </p>
           <button className="primary-btn">Learn more</button>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="right"
+        >
           <img src={wordpressIllus} alt="Great wordpress experience" />
-        </div>
+        </motion.div>
       </div>
       <div className="illus-container fourth-illus">
-        <div className="left">
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="left"
+        >
           <h3 className="sm-heading">Professional and hands-on</h3>
           <h1>24/7 Support</h1>
           <p>
@@ -61,13 +104,25 @@ export const IllusSection = () => {
             up and running. Anytime.
           </p>
           <button className="primary-btn">Learn more</button>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="right"
+        >
           <img src={supportIllus} alt="Professional and hands-on" />
-        </div>
+        </motion.div>
       </div>
       <div className="illus-container five-illus">
-        <div className="left">
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="left"
+        >
           <h3 className="sm-heading">From micro to large-scale</h3>
           <h1>From micro to large-scale</h1>
           <p>
@@ -76,10 +131,16 @@ export const IllusSection = () => {
             grows.
           </p>
           <button className="primary-btn">Learn more</button>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="right"
+        >
           <img src={scaleIllus} alt="From micro to large-scale" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

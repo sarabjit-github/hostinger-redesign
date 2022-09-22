@@ -47,7 +47,7 @@ export const Hero = () => {
           <motion.div
             initial={{ y: "20%" }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: "4s" }}
+            transition={{ type: "spring", duration: "3s" }}
             className="hero-heading"
           >
             <h1>
@@ -60,7 +60,7 @@ export const Hero = () => {
           <motion.div
             initial={{ y: "20%" }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: "4s" }}
+            transition={{ type: "spring", duration: "3s" }}
             className="hero-txt"
           >
             <p>
@@ -71,7 +71,7 @@ export const Hero = () => {
           <motion.div
             initial={{ y: "20%" }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: "4s" }}
+            transition={{ type: "spring", duration: "3s" }}
             className="timer"
           >
             <div className="counter">
@@ -100,7 +100,7 @@ export const Hero = () => {
           <motion.div
             initial={{ y: "20%" }}
             animate={{ y: 0 }}
-            transition={{ type: "spring", duration: "4s" }}
+            transition={{ type: "spring", duration: "3s" }}
             className="hero-guarantee"
           >
             <img src={tickImg} alt="true" height="14" />
@@ -108,44 +108,28 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
         {/* Animation */}
-        <div className="right">
+        <motion.div
+          initial={{ y: "20%" }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", duration: "3s", bounce: "0.4" }}
+          className="right"
+        >
           <div className="main-illus">
             {/* Animation */}
-            <motion.img
-              initial={{ x: "20%" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", duration: "4s", bounce: "0.3" }}
-              src={bigIllus}
-              alt="illustration"
-            />
+            <img src={bigIllus} alt="illustration" />
             {/* Animation */}
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* Animation */}
-      <motion.div
-        initial={{ y: "70px" }}
-        animate={{ y: 0 }}
-        transition={{ type: "spring", duration: "2s", bounce: "0.3" }}
-        className="Highlight best"
-      >
+      <div className="Highlight best">
         <img src={bestIcon} alt="img" />
         <span>Best Web Hosting</span>
-      </motion.div>
-      <motion.div
-        initial={{ y: "100px", opacity: "0" }}
-        animate={{ y: 0, opacity: "1" }}
-        transition={{ type: "spring", duration: "4s", bounce: "0.1" }}
-        className="Highlight setting"
-      >
+      </div>
+      <div className="Highlight setting">
         <img src={settingIcon} alt="img" />
         <span>Easy to use and simple</span>
-      </motion.div>
-      {/* Animation */}
-      {/* Side Illustrations */}
-      {/* <div className="side-illus">
-        <img src={bigIllus2} alt="Cloud Hosting" />
-      </div> */}
+      </div>
     </section>
   );
 };

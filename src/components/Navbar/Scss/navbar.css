@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+  width: 15px;
+  background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background: rgba(103, 61, 230, 0.9);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -17,7 +27,7 @@
 
 @media (max-width: 576px) {
   .navbar {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
 
@@ -632,5 +642,192 @@
 
 .navbar .side-navbar .login button:active {
   background: rgba(103, 61, 230, 0.8);
+}
+
+.navbar .language-sec {
+  position: fixed;
+  top: 100px;
+  right: 0%;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
+  z-index: 99999;
+  padding-bottom: 5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar .language-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar .language-sec .upper-lang {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.navbar .language-sec .upper-lang .lang-search {
+  position: relative;
+  width: 100%;
+}
+
+.navbar .language-sec .upper-lang .lang-search input {
+  width: 100%;
+  border: 2px solid #673de6;
+  border-radius: 8px;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #673de6;
+  background: rgba(103, 61, 230, 0.03);
+}
+
+.navbar .language-sec .upper-lang .lang-search input::-webkit-input-placeholder {
+  color: rgba(30, 25, 38, 0.8);
+}
+
+.navbar .language-sec .upper-lang .lang-search input:-ms-input-placeholder {
+  color: rgba(30, 25, 38, 0.8);
+}
+
+.navbar .language-sec .upper-lang .lang-search input::-ms-input-placeholder {
+  color: rgba(30, 25, 38, 0.8);
+}
+
+.navbar .language-sec .upper-lang .lang-search input::placeholder {
+  color: rgba(30, 25, 38, 0.8);
+}
+
+.navbar .language-sec .upper-lang .lang-search input:focus {
+  background: white;
+}
+
+.navbar .language-sec .upper-lang .lang-search svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  top: 1.1rem;
+  left: 1rem;
+  fill: none;
+}
+
+.navbar .language-sec .upper-lang .close-btn {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .language-sec .upper-lang .close-btn:hover {
+  background-color: rgba(103, 61, 230, 0.1);
+}
+
+.navbar .language-sec .upper-lang .close-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar .language-sec .lower-lang {
+  padding: 2rem 1rem;
+}
+
+.navbar .language-sec .lower-lang .language-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  .navbar .language-sec .lower-lang .language-con {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .language-sec .lower-lang .language-con {
+    gap: 1rem;
+  }
+}
+
+.navbar .language-sec .lower-lang .language-con .language {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(103, 61, 230, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.navbar .language-sec .lower-lang .language-con .language:hover {
+  background: rgba(103, 61, 230, 0.1);
+}
+
+.navbar .language-sec .lower-lang .language-con .language img {
+  width: 30px;
+}
+
+.navbar .language-sec .lower-lang .language-con .language p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e1926;
+  letter-spacing: .01rem;
+}
+
+.navbar .language-sec .lower-lang .language-con .language span {
+  font-size: .9rem;
+  font-weight: 400;
+  color: rgba(30, 25, 38, 0.8);
+  position: relative;
+  top: 1px;
 }
 /*# sourceMappingURL=navbar.css.map */

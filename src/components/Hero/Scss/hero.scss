@@ -86,7 +86,7 @@ $light-blue: #00d0ff;
   padding: 0 50px;
   margin: auto;
   @media (max-width: 576px) {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 .hero {
@@ -381,6 +381,7 @@ $light-blue: #00d0ff;
   border-radius: 12px;
   outline: 4px solid $black;
   outline-offset: 4px;
+  z-index: 22;
   // filter: grayscale(1);
   transform: scale(0.8);
   @media (max-height: 768px) {

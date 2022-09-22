@@ -5,6 +5,7 @@ import userImg from "../../img/user.svg";
 import graphImg from "../../img/graph.svg";
 import wordpressLogo from "../../img/word-logo.svg";
 import hostingerVideo from "../../img/hostingerPanel-video.mp4";
+import { motion } from "framer-motion";
 
 export const ControlPanel = () => {
   return (
@@ -14,7 +15,6 @@ export const ControlPanel = () => {
         <div className="panel-img">
           {/* <img src={hostingerPanel} alt="Hostinger panel" /> */}
           <video
-            
             autoPlay
             muted
             // controls
@@ -24,7 +24,13 @@ export const ControlPanel = () => {
           </video>
         </div>
         <div className="panel-content">
-          <div className="p-content">
+          <motion.div
+            initial={{ opacity: 0.5, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+            viewport={{ once: true }}
+            className="p-content"
+          >
             <div className="pc-head">
               <img src={userImg} alt="image" />
               <h1>Ease of use</h1>
@@ -35,8 +41,14 @@ export const ControlPanel = () => {
                 those with little experience in website development.
               </p>
             </div>
-          </div>
-          <div className="p-content">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0.5, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+            viewport={{ once: true }}
+            className="p-content"
+          >
             <div className="pc-head">
               <img src={graphImg} alt="image" />
               <h1>Powerful</h1>
@@ -47,18 +59,25 @@ export const ControlPanel = () => {
                 developer needs.
               </p>
             </div>
-          </div>
-          <div className="p-content">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0.5, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+            viewport={{ once: true }}
+            className="p-content"
+          >
             <div className="pc-head">
               <img src={wordpressLogo} alt="image" />
               <h1>WordPress Optimized</h1>
             </div>
             <div className="pc-bottom">
               <p>
-              Get more speed, better SEO, visitor retention and conversions with our custom-built WP optimization stack and LiteSpeed cache.
+                Get more speed, better SEO, visitor retention and conversions
+                with our custom-built WP optimization stack and LiteSpeed cache.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

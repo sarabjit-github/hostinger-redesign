@@ -15,10 +15,12 @@ import domainImg from "../../img/domain-checker.svg";
 import whoisImg from "../../img/whois.svg";
 import domainTransfer from "../../img/domain-transfer.svg";
 import close from "../../img/close.svg";
+import search from "../../img/search-icon.svg";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const [sideNavbar, setSideNavbar] = useState(false);
+  const [showLanguages, setShowLanguages] = useState(false);
   let customScroll = function () {
     window.addEventListener("scroll", (event) => {
       let scrollTop = window.scrollY;
@@ -28,6 +30,12 @@ export const Navbar = () => {
   useEffect(() => {
     customScroll();
   }, [window.screenY]);
+
+  let fakeArray = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 11,
+    12, 13, 14, 15, 16, 17, 18, 19, 20,
+  ];
+  // console.log(fakeArray);
 
   return (
     <header
@@ -39,7 +47,7 @@ export const Navbar = () => {
       }}
     >
       <div className="nav-left">
-        <div className="hamburger" onClick={()=>setSideNavbar(true)}>
+        <div className="hamburger" onClick={() => setSideNavbar(true)}>
           <span></span>
           <span></span>
           <span></span>
@@ -265,14 +273,17 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="lang">
-          <button>
+          <button onClick={() => setShowLanguages(!showLanguages)}>
             <img src={indiaLogo} alt="flag" />
             <p>English</p>
             <span>IN</span>
           </button>
         </div>
       </div>
-      <div className="side-navbar" style={{left: sideNavbar ? "0px":"-150%"}}>
+      <div
+        className="side-navbar"
+        style={{ left: sideNavbar ? "0px" : "-150%" }}
+      >
         <div className="sn-header">
           <div className="logo">
             <a href="/">
@@ -348,7 +359,7 @@ export const Navbar = () => {
               </svg>
             </a>
           </div>
-          <div className="close" onClick={()=>setSideNavbar(false)}>
+          <div className="close" onClick={() => setSideNavbar(false)}>
             <img src={close} alt="close" />
           </div>
         </div>
@@ -485,6 +496,52 @@ export const Navbar = () => {
         </ul>
         <div className="login">
           <button className="primary-btn">Login</button>
+        </div>
+      </div>
+      <div className="language-sec" style={{right: showLanguages ? "0":"-120%", top: scrollY > 0 ? "90px":'100px'}}>
+        <div className="upper-lang">
+          <div className="lang-search">
+            <input type="text" placeholder="Search" />
+            <svg
+              width="45"
+              height="45"
+              viewBox="0 0 45 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="18.3031"
+                cy="18.3031"
+                r="15.8031"
+                stroke="#673de6"
+                stroke-width="5"
+              />
+              <line
+                x1="30.9531"
+                y1="30.4383"
+                x2="42.9527"
+                y2="42.4379"
+                stroke="#673de6"
+                stroke-width="5"
+              />
+            </svg>
+          </div>
+          <button className="close-btn" onClick={() => setShowLanguages(false)}>
+            <img src={close} alt="closee" />
+          </button>
+        </div>
+        <div className="lower-lang">
+          <div className="language-con">
+            {fakeArray.map((element, i) => {
+              return (
+                <div key={i} className="language">
+                  <img src={indiaLogo} alt="flag" />
+                  <p>India</p>
+                  <span>English</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </header>
