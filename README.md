@@ -7,3 +7,9 @@ Live link Netlify: https://hostinger-new.netlify.app/
 According to Codefest rule I can't copy any online template, So first, I made a new Prototype of Hostinger website and then convert into High quality prototype. Here is the Link of my Figma file: https://www.figma.com/file/qOJURmCKKgP7SlYrKc2vBT/Hostinger_Redesign?node-id=0%3A1
 
 So now my design was ready and I convert this Design into high quality code and Fully responsive upto 375px devices length.
+
+### Technologies used:
+  1.React
+  2.Framer Motion library for animations
+  3.Scss for styling
+  4.Figma for New Design
