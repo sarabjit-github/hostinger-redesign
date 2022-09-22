@@ -1,0 +1,127 @@
+$purple: #673de6;
+$pink: #ff3682;
+$dark-orange: #ff8158;
+$orange: #ffc14a;
+$yellow: #fed569;
+$black: #1e1926;
+$green: #00ac87;
+$light-purple: #faeaff;
+$light-green: #52fbde;
+$light-blue: #00d0ff;
+
+@mixin dropShadow($color) {
+  box-shadow: 0px 2px 25px 10px rgba($color, 0.2);
+}
+@mixin font-h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media (max-width: 900px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 668px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 2.15rem;
+    line-height: 1.25;
+  }
+}
+.sec-heading {
+  @include font-h2();
+  text-align: center;
+  margin: 2.5rem 0;
+  color: $black;
+  @media (max-width: 668px) {
+    margin: 1.5rem 0;
+  }
+  @media (max-width: 450px) {
+    margin: 0.75rem 0;
+  }
+  span {
+    color: $pink;
+  }
+}
+.services-con {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 400px));
+  gap: 3rem 2.5rem;
+  justify-content: center;
+  margin-top: 5rem;
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, minmax(300px, 400px));
+    gap: 2rem;
+  }
+  @media (max-width: 576px) {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .service {
+    background: rgba($green, 1);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    @include dropShadow($green);
+    @media (max-width: 1200px) {
+      padding: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      padding: 0.75rem;
+      gap: 0rem;
+    }
+    @media (max-width: 576px) {
+      padding: 0.5rem;
+    }
+    svg {
+      width: 100px;
+      height: 100px;
+      @media (max-width: 900px) {
+        width: 90px;
+        height: 90px;
+      }
+      @media (max-width: 576px) {
+        width: 80px;
+        height: 80px;
+      }
+      path {
+        fill: white;
+      }
+      g {
+        // width: 80px;
+        fill: white;
+      }
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: white;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: .02rem;
+      text-transform: uppercase;
+      @media (max-width: 1200px) {
+        font-size: 1.15rem;
+      }
+    }
+  }
+  > div:nth-child(2n) {
+    background: rgba($yellow, 1);
+    @include dropShadow($yellow);
+    svg {
+      path {
+        fill: $black;
+      }
+      g {
+        // width: 80px;
+        fill: $black;
+      }
+    }
+    h3 {
+      color: $black;
+    }
+  }
+}

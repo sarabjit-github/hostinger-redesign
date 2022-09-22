@@ -1,0 +1,282 @@
+$purple: #673de6;
+$pink: #ff3682;
+$dark-orange: #ff8158;
+$orange: #ffc14a;
+$yellow: #fed569;
+$black: #1e1926;
+$green: #00ac87;
+$light-purple: #faeaff;
+$light-green: #52fbde;
+$light-blue: #00d0ff;
+
+@mixin dropShadow($color) {
+  box-shadow: 0 1px 25px 3px rgba($color, 0.2);
+}
+@mixin FlexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guarntee-sec {
+  text-align: center;
+  margin-bottom: 8rem;
+  h1 {
+    font-size: 3.5rem;
+    color: $pink;
+    letter-spacing: 0.02rem;
+    line-height: 1.4;
+    @media (max-width: 900px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    @media (max-width: 500px) {
+      font-size: 2.25rem;
+      line-height: 1.2;
+    }
+    @media (max-width: 450px) {
+      font-size: 2.15rem;
+      line-height: 1.2;
+    }
+  }
+  p {
+    max-width: 500px;
+    margin: 2rem auto;
+    font-size: 1.25rem;
+    color: $black;
+    line-height: 1.8;
+    font-family: "Poppins", sans-serif;
+    @media (max-width: 900px) {
+      max-width: 400px;
+      margin: 1rem auto;
+    }
+    @media (max-width: 576px) {
+      max-width: 350px;
+      font-size: 1.15rem;
+      margin: 1rem auto;
+    }
+    @media (max-width: 450px) {
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+  }
+  button {
+    background: $purple;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    color: white;
+    transition: 0.3s;
+    @media (max-width: 950px) {
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 900px) {
+      padding: 1rem 2rem;
+    }
+    @media (max-width: 576px) {
+      padding: 0.8rem 2rem;
+    }
+    &:hover {
+      @include dropShadow($purple);
+      background: rgba($purple, 0.9);
+    }
+    &:active {
+      background: rgba($purple, 0.8);
+    }
+  }
+}
+footer {
+  width: 100%;
+  min-height: 500px;
+  background: rgba($purple, 0.05);
+  padding: 3rem 2rem;
+  .f-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+    .logo {
+      svg {
+        width: 250px;
+        height: auto;
+        @media (max-width: 576px) {
+          width: 200px;
+        }
+      }
+    }
+    .fh-txt {
+      max-width: 850px;
+      p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8;
+        font-family: "Poppins";
+        color: black;
+        letter-spacing: 0.025rem;
+        @media (max-width: 576px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .f-menu-con {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 90px;
+    @media (max-width:600px) {
+      gap: 50px;
+    }
+    @media (max-width:500px) {
+      gap: 40px;
+    }
+    .f-menu {
+      display: flex;
+      flex-direction: column;
+
+      .fm-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+        color: $black;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        @media (max-width: 576px) {
+          font-weight: 600;
+        }
+      }
+      .f-links-con {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-family: "Poppins", sans-serif;
+          font-size: 0.9rem;
+          letter-spacing: 0.02rem;
+          text-decoration: none;
+          color: black;
+          margin-bottom: 0.8rem;
+          transition: 0.4s ease;
+          display: flex;
+          align-items: center;
+          @media (max-width: 576px) {
+            margin-bottom: 0.5rem;
+          }
+          svg {
+            width: 14px;
+            position: relative;
+            left: 5px;
+            opacity: 0.65;
+            @media (max-width: 576px) {
+              width: 12px;
+            }
+          }
+          &:hover {
+            color: $purple;
+            // border-bottom: 1px solid $purple;
+            svg {
+              left: 10px;
+              fill: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  .payment-social {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    @include FlexBetween();
+    gap: 2rem;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba($black, 0.2);
+    .payments {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      h3{
+        font-weight: 500;
+        color: $black;
+      }
+      .pc-con {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        position: relative;
+        top: 4px;
+        @media (max-width: 900px) {
+          left: -3px;
+          top: -2px;
+        }
+        img {
+          width: auto;
+          height: 40px;
+          @media (max-width: 576px) {
+            width: auto;
+            height: 35px;
+          }
+          @media (max-width: 450px) {
+            width: auto;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .social {
+      .pc-con {
+        gap: 1rem;
+        img {
+          width: 35px;
+          height: auto;
+          @media (max-width: 576px) {
+            width: 30px;
+            height: auto;
+          }
+          @media (max-width: 450px) {
+            width: 25px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem 2rem;
+    @include FlexBetween();
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    div {
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.02rem;
+      color: $black;
+      line-height: 2;
+      @media (max-width: 900px) {
+        letter-spacing: 0.005rem;
+      }
+    }
+  }
+}

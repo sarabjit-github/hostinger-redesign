@@ -1,0 +1,172 @@
+.sec-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2.5rem 0;
+  color: #1e1926;
+}
+
+@media (max-width: 900px) {
+  .sec-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 668px) {
+  .sec-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .sec-heading {
+    font-size: 2.15rem;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 668px) {
+  .sec-heading {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .sec-heading {
+    margin: 0.75rem 0;
+  }
+}
+
+.sec-heading span {
+  color: #ff3682;
+}
+
+.services-con {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 400px))[3];
+      grid-template-columns: repeat(3, minmax(300px, 400px));
+  gap: 3rem 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+@media (max-width: 1100px) {
+  .services-con {
+    -ms-grid-columns: (minmax(300px, 400px))[2];
+        grid-template-columns: repeat(2, minmax(300px, 400px));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-con {
+    -ms-grid-columns: (minmax(300px, 400px))[1];
+        grid-template-columns: repeat(1, minmax(300px, 400px));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-con {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+}
+
+.services-con .service {
+  background: #00ac87;
+  border-radius: 16px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 25px 10px rgba(0, 172, 135, 0.2);
+          box-shadow: 0px 2px 25px 10px rgba(0, 172, 135, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .services-con .service {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-con .service {
+    padding: 0.75rem;
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-con .service {
+    padding: 0.5rem;
+  }
+}
+
+.services-con .service svg {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 900px) {
+  .services-con .service svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-con .service svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.services-con .service svg path {
+  fill: white;
+}
+
+.services-con .service svg g {
+  fill: white;
+}
+
+.services-con .service h3 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .02rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .services-con .service h3 {
+    font-size: 1.15rem;
+  }
+}
+
+.services-con > div:nth-child(2n) {
+  background: #fed569;
+  -webkit-box-shadow: 0px 2px 25px 10px rgba(254, 213, 105, 0.2);
+          box-shadow: 0px 2px 25px 10px rgba(254, 213, 105, 0.2);
+}
+
+.services-con > div:nth-child(2n) svg path {
+  fill: #1e1926;
+}
+
+.services-con > div:nth-child(2n) svg g {
+  fill: #1e1926;
+}
+
+.services-con > div:nth-child(2n) h3 {
+  color: #1e1926;
+}
+/*# sourceMappingURL=services.css.map */
