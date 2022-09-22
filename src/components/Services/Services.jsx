@@ -1,17 +1,5 @@
 import React from "react";
 import "./Scss/services.css";
-import freeSSL from "../../img/free-ssl.svg";
-import accessMg from "../../img/access-management.svg";
-import eComOpt from "../../img/ecommerce.svg";
-import freeMigration from "../../img/free-migration.svg";
-import backups from "../../img/backups.svg";
-import ddos from "../../img/ddos.svg";
-import php from "../../img/php.svg";
-import wordpressPlugin from "../../img/litespeed-wp.svg";
-import wordpressInstall from "../../img/litespeed-wp.svg";
-import techSupport from "../../img/wp-installation.svg";
-import scriptInstall from "../../img/script-installer.svg";
-import uptimeGt from "../../img/uptime-guarantee.svg";
 import { motion } from "framer-motion";
 
 export const Services = () => {

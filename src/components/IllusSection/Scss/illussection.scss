@@ -50,7 +50,6 @@ $light-blue: #00d0ff;
   justify-content: space-between;
   align-items: center;
 }
-
 .illus-container {
   @include FlexBetween();
   gap: 1.5rem;
@@ -61,7 +60,6 @@ $light-blue: #00d0ff;
     flex-direction: column;
   }
   .left {
-    // max-width: 700px;
     @media (max-width: 768px) {
         text-align: center;
         order: 0;
@@ -167,8 +165,5 @@ $light-blue: #00d0ff;
   }
   .right {
     order: 0;
-    // @media (max-width: 768px) {
-    //     order: 1;
-    //   }
   }
 }

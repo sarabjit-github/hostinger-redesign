@@ -52,7 +52,6 @@ $light-blue: #00d0ff;
   width: 100%;
   height: 100%;
   margin: 3rem auto;
-  // background: #ff0000;
   border: 1px solid rgba($black, 0.2);
   border-radius: 12px;
   @media (max-width: 450px) {
@@ -113,7 +112,6 @@ $light-blue: #00d0ff;
       left: 0%;
       width: 100%;
       @include FlexCenter();
-      // width: 100%;
       height: 70px;
       background: red;
       padding: 1rem;
@@ -130,7 +128,6 @@ $light-blue: #00d0ff;
         cursor: pointer;
         transition: 0.2s ease;
         &:hover {
-          // transform: scale(1.05);
           opacity: 0.75;
         }
         img {
@@ -141,7 +138,6 @@ $light-blue: #00d0ff;
       }
     }
     > div {
-      // height: 420px;
       height: 100%;
       flex: 1;
       padding: 2rem 4rem;
@@ -151,7 +147,6 @@ $light-blue: #00d0ff;
       @media (max-width: 990px) and (min-width: 850px) {
         padding: 2rem 3rem;
       }
-      // display: flex;
       .feature {
         @include FlexCenter();
         justify-content: flex-start;
@@ -223,7 +218,6 @@ $light-blue: #00d0ff;
               border-top-color: transparent;
               border-left-color: transparent;
               border-right-color: transparent;
-              // background: red;
             }
           }
         }
@@ -232,9 +226,6 @@ $light-blue: #00d0ff;
         height: 205px;
         width: 100%;
         background: transparent;
-        @media (max-width: 990px) {
-          // display: none;
-        }
       }
       .fake-height.fake-left {
         @media (max-width: 1210px) {
@@ -280,7 +271,6 @@ $light-blue: #00d0ff;
     }
     .second {
       order: 2;
-      // background: $yellow;
       border-right: 1px solid rgba($black, 0.2);
       border-left: 1px solid rgba($black, 0.2);
       @media (max-width: 990px) {
@@ -295,10 +285,6 @@ $light-blue: #00d0ff;
         text-align: center;
       }
       .feature-price {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
         margin: 2rem 0;
         text-align: center;
         .price {
@@ -342,7 +328,6 @@ $light-blue: #00d0ff;
           font-size: 1.35rem;
           transition: 0.3s;
           &:hover {
-            // box-shadow: 0 4px 25px 5px $purple-1;
             @include dropShadow($pink);
             background: rgba($pink, 0.9);
           }
@@ -362,8 +347,6 @@ $light-blue: #00d0ff;
         top: 310px;
       }
       text-align: center;
-      // margin-top: 7rem;
-      // margin-bottom: 4rem;
       h2 {
         font-size: 2rem;
         color: $black;
@@ -371,7 +354,6 @@ $light-blue: #00d0ff;
     }
     .third {
       order: 3;
-      // background: $dark-orange;
       border-bottom-right-radius: 12px;
       @media (max-width: 990px) {
         order: 2;

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Scss/hero.css";
 import bigIllus from "../../img/big-illustration.svg";
-import bigIllus2 from "../../img/big-illus3.svg";
 import tickImg from "../../img/tick.svg";
 import bestIcon from "../../img/best.svg";
 import settingIcon from "../../img/Settings.svg";
@@ -38,10 +37,7 @@ export const Hero = () => {
     <section className="hero section">
       <div className="hero-con">
         {/* Animation */}
-        <motion.div
-          // initial={{ y: "20%" }}
-          // animate={{ y: 0 }}
-          // transition={{ type: "spring", duration: "2s", }}
+        <div
           className="left"
         >
           <motion.div
@@ -106,7 +102,7 @@ export const Hero = () => {
             <img src={tickImg} alt="true" height="14" />
             <span>Get exclusive 30-day money-back guarantee</span>
           </motion.div>
-        </motion.div>
+        </div>
         {/* Animation */}
         <motion.div
           initial={{ y: "20%" }}

@@ -27,8 +27,8 @@ export const IllusSection = () => {
           <button className="primary-btn">Learn more</button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.5, x: -150 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className="right"
@@ -53,8 +53,8 @@ export const IllusSection = () => {
           <button className="primary-btn">Learn more</button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.5, x: 150 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className="right"
@@ -80,8 +80,8 @@ export const IllusSection = () => {
           <button className="primary-btn">Learn more</button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.5, x: -150 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className="right"
@@ -106,8 +106,8 @@ export const IllusSection = () => {
           <button className="primary-btn">Learn more</button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.5, x: 150 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className="right"
@@ -133,8 +133,8 @@ export const IllusSection = () => {
           <button className="primary-btn">Learn more</button>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.5, x: 150 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className="right"

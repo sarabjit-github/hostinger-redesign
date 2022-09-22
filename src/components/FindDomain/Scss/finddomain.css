@@ -46,6 +46,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .find-domain .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
 @media (max-width: 990px) {
   .find-domain .section .left {
     padding-top: 2rem;
@@ -218,6 +224,14 @@
 @media (max-width: 576px) {
   .find-domain .section .right .search-bar input {
     font-size: 1.1rem;
+    padding-left: 1.5rem;
+    border-radius: 36px;
+  }
+}
+
+@media (max-width: 390px) {
+  .find-domain .section .right .search-bar input {
+    padding-left: 1rem;
   }
 }
 
@@ -259,13 +273,28 @@
 @media (max-width: 576px) {
   .find-domain .section .right .search-bar button {
     max-width: 80px;
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .find-domain .section .right .search-bar button {
+    height: 75px;
+    max-width: 65px;
   }
 }
 
 @media (max-width: 450px) {
   .find-domain .section .right .search-bar button {
     height: 70px;
-    max-width: 75px;
+    max-width: 65px;
+  }
+}
+
+@media (max-width: 390px) {
+  .find-domain .section .right .search-bar button {
+    max-width: 60px;
   }
 }
 
@@ -289,6 +318,13 @@
     top: 2px;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+}
+
+@media (max-width: 390px) {
+  .find-domain .section .right .search-bar button img {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 

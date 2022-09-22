@@ -348,7 +348,7 @@
 
 @media (max-height: 450px) {
   .hero .left .timer .counter .count p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 

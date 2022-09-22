@@ -1,6 +1,5 @@
 import React from "react";
 import "./Scss/controlpanel.css";
-import hostingerPanel from "../../img/hostinger-panel.png";
 import userImg from "../../img/user.svg";
 import graphImg from "../../img/graph.svg";
 import wordpressLogo from "../../img/word-logo.svg";
@@ -12,17 +11,20 @@ export const ControlPanel = () => {
     <section className="mid-sec control-sec" id="control-sec">
       <h1>User-Friendly Control Panel</h1>
       <div className="panel-con">
-        <div className="panel-img">
-          {/* <img src={hostingerPanel} alt="Hostinger panel" /> */}
+        <motion.div
+          initial={{ opacity: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="panel-img"
+        >
           <video
             autoPlay
             muted
-            // controls
-            // width="800px"
           >
             <source src={hostingerVideo} type="video/mp4" />
           </video>
-        </div>
+        </motion.div>
         <div className="panel-content">
           <motion.div
             initial={{ opacity: 0.5, y: 50 }}

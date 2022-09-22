@@ -44,7 +44,6 @@ $light-blue: #00d0ff;
   min-height: 600px;
   height: 100%;
   background: $green;
-  //   padding: 2rem;
   padding-bottom: 8rem;
   margin-bottom: 8rem;
   @media (max-width: 1270px) {
@@ -73,7 +72,6 @@ $light-blue: #00d0ff;
   .panel-con {
     display: flex;
     align-items: center;
-    // justify-content: center;
     gap: 4rem;
     margin-top: 1rem;
     @media (max-width: 1270px) {
@@ -85,9 +83,6 @@ $light-blue: #00d0ff;
     }
 
     .panel-img {
-      // img{
-      //     width: 700px;
-      // }
       @media (max-width: 1270px) {
         position: relative;
         left: -10%;
@@ -135,7 +130,6 @@ $light-blue: #00d0ff;
       max-width: 700px;
       display: flex;
       flex-direction: column;
-      //   align-items: center;
       gap: 5rem;
       margin-left: 5rem;
       @media (max-width: 1550px) {

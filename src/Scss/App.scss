@@ -18,7 +18,7 @@ $light-blue: #00d0ff;
   box-sizing: border-box;
   scroll-behavior: smooth;
   //>>>>>>
-  // Read this if you reach this
+  // Kindly Read this if you reach at this
   // first I use Montserrat fonts for big headings but after sometimes I decide to use "Poppins" font for full websie for typography
   // you can also check website typography with "Montserrat font"  ? just uncomment "Montserrat" font-family line & comment "Poppins" font-family line :)
   //>>>>>>
@@ -28,11 +28,10 @@ $light-blue: #00d0ff;
   transition: all 0.1s;
 }
 html {
-  font-size: 92%;
+  font-size: 85%;
 }
 .App {
   position: relative;
-  // overflow-x: hidden;
 }
 button {
   white-space: nowrap;
@@ -52,10 +51,6 @@ button {
 }
 
 .hero-page {
-  // background: url(../img/bg-gradient-1.png);
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-size: cover;
   background: linear-gradient(
     15deg,
     rgba(255, 255, 255, 1) 0%,

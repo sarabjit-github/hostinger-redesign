@@ -36,6 +36,9 @@ $light-blue: #00d0ff;
       flex-direction: column;
       padding: 4rem 2rem;
     }
+    @media (max-width: 450px) {
+      padding: 3rem 1.5rem;
+    }
     .left {
       @media (max-width: 990px) {
         padding-top: 2rem;
@@ -137,6 +140,11 @@ $light-blue: #00d0ff;
           letter-spacing: 0.02rem;
           @media (max-width: 576px) {
             font-size: 1.1rem;
+            padding-left: 1.5rem;
+            border-radius: 36px;
+          }
+          @media (max-width: 390px) {
+            padding-left: 1rem;
           }
           &::placeholder {
             color: rgba($black, 0.5);
@@ -158,11 +166,21 @@ $light-blue: #00d0ff;
           }
           @media (max-width: 576px) {
             max-width: 80px;
+            border-top-right-radius: 36px;
+            border-bottom-right-radius: 36px;
+          }
+          @media (max-width: 480px) {
+            height: 75px;
+            max-width: 65px;
           }
           @media (max-width: 450px) {
             height: 70px;
-            max-width: 75px;
+            max-width: 65px;
           }
+          @media (max-width: 390px) {
+            max-width: 60px;
+          }
+          
           &:hover {
             background: rgba($orange, 0.8);
           }
@@ -176,6 +194,9 @@ $light-blue: #00d0ff;
             @media (max-width: 576px) {
               top: 2px;
               transform: scale(0.6);
+            }
+            @media (max-width: 390px) {
+              transform: scale(0.5);
             }
           }
         }

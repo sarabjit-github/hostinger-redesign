@@ -7,7 +7,6 @@ import wordpressLogo from "../../img/wordpress-logo.svg";
 export const Partners = () => {
   return (
     <section className="mid-sec section">
-      {/* <h1 className="sec-heading"><span>Our</span> partners</h1> */}
       <div className="partner-con">
         <div>
           <img src={wordpressLogo} alt="wordpress" />

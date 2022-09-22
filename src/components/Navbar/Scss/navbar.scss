@@ -28,11 +28,11 @@ $light-blue: #00d0ff;
   align-items: center;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
   background: rgb(245, 245, 245);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 15px;
   background: rgba($purple, 0.9);
 }
@@ -42,17 +42,15 @@ $light-blue: #00d0ff;
   width: 100%;
   @include FlexBetween();
   height: 100px;
-  // background: $orange;
   padding: 0 50px;
   z-index: 50;
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     padding: 0 15px;
   }
   .nav-left {
     @include FlexCenter();
     .hamburger {
       width: 25px;
-      // background: red;
       margin-right: 20px;
       display: none;
       justify-content: center;
@@ -61,11 +59,10 @@ $light-blue: #00d0ff;
       @media (max-width: 1100px) {
         display: flex;
       }
-      @media (max-width:450px) {
+      @media (max-width: 450px) {
         margin-right: 15px;
       }
       span {
-        // display: inline-block;
         width: 25px;
         height: 3px;
         border-radius: 2px;
@@ -82,7 +79,7 @@ $light-blue: #00d0ff;
       @media (max-width: 1200px) {
         width: 160px;
       }
-      @media (max-width:450px) {
+      @media (max-width: 450px) {
         width: 140px;
       }
     }
@@ -129,13 +126,11 @@ $light-blue: #00d0ff;
             left: 0px;
             width: max-content;
             height: max-content;
-            // display: flex;
             display: none;
             align-items: flex-start;
             flex-direction: column;
             gap: 0.5rem;
             background: #ffffff;
-            // @include dropShadow($black);
             box-shadow: 0 1px 20px 2px rgba($black, 0.1);
             padding: 1.5rem;
             border-radius: 12px;
@@ -158,8 +153,6 @@ $light-blue: #00d0ff;
               gap: 5px;
               padding: 1rem 0.5rem;
               border-radius: 8px;
-              // border: 1px solid;
-              // background: rgba($purple, 0.025);
               .a-img {
                 img {
                   width: 50px;
@@ -207,13 +200,13 @@ $light-blue: #00d0ff;
         top: 2px;
         right: 5px;
         cursor: pointer;
-        @media (max-width:576px) {
+        @media (max-width: 576px) {
           right: 0px;
         }
         img {
           width: 30px;
           height: auto;
-          @media (max-width:450px) {
+          @media (max-width: 450px) {
             width: 25px;
           }
         }
@@ -230,7 +223,6 @@ $light-blue: #00d0ff;
           padding: 12px 24px;
           transition: 0.3s;
           &:hover {
-            // box-shadow: 0 4px 25px 5px $purple-1;
             @include dropShadow($purple);
             background: rgba($purple, 0.9);
           }
@@ -248,11 +240,11 @@ $light-blue: #00d0ff;
         padding-left: 18px;
       }
       border-left: 2px solid rgba($black, 0.1);
-      @media (max-width:576px) {
-          border: none;
-          padding-left: 0;
+      @media (max-width: 576px) {
+        border: none;
+        padding-left: 0;
       }
-      @media (max-width:450px) {
+      @media (max-width: 450px) {
         height: 40px;
       }
       button {
@@ -264,7 +256,7 @@ $light-blue: #00d0ff;
         border-radius: 4px;
         background: white;
         transition: 0.3s;
-        @media (max-width:450px) {
+        @media (max-width: 450px) {
           gap: 5px;
           padding: 4px 8px;
         }
@@ -287,7 +279,7 @@ $light-blue: #00d0ff;
         }
         img {
           height: 1.25rem;
-          @media (max-width:450px) {
+          @media (max-width: 450px) {
             height: 1.15rem;
           }
         }
@@ -307,13 +299,12 @@ $light-blue: #00d0ff;
     overflow: scroll;
     @include dropShadow($black);
     transition: 0.3s ease;
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       max-width: 380px;
     }
     &::-webkit-scrollbar {
       display: none;
     }
-    // padding: 0 2rem;
     .sn-header {
       padding: 0 2rem;
       @include FlexBetween();
@@ -330,7 +321,6 @@ $light-blue: #00d0ff;
     .side-menu {
       display: flex;
       flex-direction: column;
-      // gap: 1.5rem;
       > li {
         list-style: none;
         margin-bottom: 1.5rem;
@@ -348,8 +338,6 @@ $light-blue: #00d0ff;
             width: 100%;
             padding: 1rem 2rem;
             @include FlexBetween();
-            // border-top: 1px solid rgba($black, 0.8);
-            // border-bottom: 1px solid rgba($black, 0.8);
             span {
               margin-right: 5px;
             }
@@ -400,7 +388,6 @@ $light-blue: #00d0ff;
         color: white;
         transition: 0.3s;
         &:hover {
-          // box-shadow: 0 4px 25px 5px $purple-1;
           @include dropShadow($purple);
           background: rgba($purple, 0.9);
         }
@@ -410,35 +397,33 @@ $light-blue: #00d0ff;
       }
     }
   }
-  .language-sec{
+  .language-sec {
     position: fixed;
     top: 100px;
     right: 0%;
-    // z-index: 451;
     width: 100%;
     min-height: 100vh;
     height: 100%;
     background: white;
     display: flex;
-    // display: none;
     flex-direction: column;
     padding: 1rem 2rem;
     overflow-y: scroll;
     z-index: 99999;
     padding-bottom: 5rem;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       display: none;
     }
-    transition: .3s;
-    .upper-lang{
+    transition: 0.3s;
+    .upper-lang {
       width: 100%;
       @include FlexBetween();
       padding: 1rem;
       gap: 2rem;
-      .lang-search{
+      .lang-search {
         position: relative;
         width: 100%;
-        input{
+        input {
           width: 100%;
           border: 2px solid $purple;
           border-radius: 8px;
@@ -449,14 +434,14 @@ $light-blue: #00d0ff;
           font-size: 1.2rem;
           color: $purple;
           background: rgba($purple, 0.03);
-          &::placeholder{
+          &::placeholder {
             color: rgba($black, 0.8);
           }
-          &:focus{
+          &:focus {
             background: white;
           }
         }
-        svg{
+        svg {
           position: absolute;
           top: 0;
           left: 0;
@@ -467,37 +452,36 @@ $light-blue: #00d0ff;
           fill: none;
         }
       }
-      .close-btn{
-          cursor: pointer;
-          padding: 1rem;
-          border-radius: 8px;
-          border: none;
-          @include FlexCenter();
-          &:hover{
-            background-color: rgba($purple, 0.1);
-          }
-        img{
+      .close-btn {
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 8px;
+        border: none;
+        @include FlexCenter();
+        &:hover {
+          background-color: rgba($purple, 0.1);
+        }
+        img {
           width: 30px;
           height: 30px;
         }
       }
     }
-    .lower-lang{
-      // border: 1px solid;
+    .lower-lang {
       padding: 2rem 1rem;
-      .language-con{
+      .language-con {
         display: flex;
         gap: 2rem 5rem;
         flex-wrap: wrap;
         justify-content: center;
         overflow-y: scroll;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           gap: 1.5rem;
         }
-        @media (max-width:576px) {
+        @media (max-width: 576px) {
           gap: 1rem;
         }
-        .language{
+        .language {
           cursor: pointer;
           display: inline-flex;
           justify-content: flex-start;
@@ -506,22 +490,22 @@ $light-blue: #00d0ff;
           padding: 1.2rem 1.5rem;
           border-radius: 8px;
           border: 1px solid rgba($purple, 0.5);
-          transition: .3s ease;
-          &:hover{
+          transition: 0.3s ease;
+          &:hover {
             background: rgba($purple, 0.1);
           }
-          
-          img{
+
+          img {
             width: 30px;
           }
-          p{
+          p {
             font-size: 1.25rem;
             font-weight: 600;
             color: $black;
-            letter-spacing: .01rem;
+            letter-spacing: 0.01rem;
           }
-          span{
-            font-size: .9rem;
+          span {
+            font-size: 0.9rem;
             font-weight: 400;
             color: rgba($black, 0.8);
             position: relative;

@@ -1,7 +1,6 @@
 import "./Scss/App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Hero } from "./components/Hero/Hero";
-import bgGradient1 from "./img/bg-gradient-1.png";
 import { Partners } from "./components/Partners/Partners";
 import { HostingFeatures } from "./components/HostingFeatures/HostingFeatures";
 import { Services } from "./components/Services/Services";

@@ -15,7 +15,6 @@ import domainImg from "../../img/domain-checker.svg";
 import whoisImg from "../../img/whois.svg";
 import domainTransfer from "../../img/domain-transfer.svg";
 import close from "../../img/close.svg";
-import search from "../../img/search-icon.svg";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -35,7 +34,6 @@ export const Navbar = () => {
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 11,
     12, 13, 14, 15, 16, 17, 18, 19, 20,
   ];
-  // console.log(fakeArray);
 
   return (
     <header
