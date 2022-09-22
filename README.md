@@ -1,6 +1,6 @@
 # Hostinger Redesign
-- Live link Vercel: https://hostinger-new.vercel.app/
-- Live link Netlify: https://hostinger-new.netlify.app/
+- Live Vercel: https://hostinger-new.vercel.app/
+- Live Netlify: https://hostinger-new.netlify.app/
 
 ### I'm take a part in Thapa Codefest September 2022 and the task for Thapa Codefest September 2022 is to redesign Hostinger website.
 
