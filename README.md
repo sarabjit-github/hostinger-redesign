@@ -9,7 +9,7 @@ According to Codefest rule I can't copy any online template, So first, I made a 
 So now my design was ready and I convert this Design into high quality code and Fully responsive upto 375px devices length.
 
 ### Technologies used:
-  **1.React**
-  **2.Framer Motion library for animations**
-  **3.Scss for styling**
-  **4.Figma for New Design**
+  - **1.React**
+  - **2.Framer Motion library for animations**
+  - **3.Scss for styling**
+  - **4.Figma for New Design**
