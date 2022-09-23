@@ -346,15 +346,20 @@ $light-blue: #00d0ff;
               transition: 0.3s;
             }
           }
+          > div.caret{
+            img{
+              transform: rotate(180deg);
+            }
+          }
           &:hover {
             transition: 0.3s ease;
             background-color: rgba($black, 0.02);
-            .sm-menu {
-              display: flex;
-            }
-            > div img {
-              transform: rotate(180deg);
-            }
+            // .sm-menu {
+            //   display: flex;
+            // }
+            // > div img {
+            //   transform: rotate(180deg);
+            // }
           }
           .sm-menu {
             display: none;
@@ -375,6 +380,9 @@ $light-blue: #00d0ff;
                 background: rgba($purple, 0.05);
               }
             }
+          }
+          .sm-menu.flex{
+            display: flex;
           }
         }
       }
