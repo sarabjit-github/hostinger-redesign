@@ -587,21 +587,15 @@
   transition: 0.3s;
 }
 
+.navbar .side-navbar .side-menu > li > a > div.caret img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .navbar .side-navbar .side-menu > li > a:hover {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   background-color: rgba(30, 25, 38, 0.02);
-}
-
-.navbar .side-navbar .side-menu > li > a:hover .sm-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar .side-navbar .side-menu > li > a:hover > div img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .navbar .side-navbar .side-menu > li > a .sm-menu {
@@ -636,6 +630,12 @@
 
 .navbar .side-navbar .side-menu > li > a .sm-menu a:hover {
   background: rgba(103, 61, 230, 0.05);
+}
+
+.navbar .side-navbar .side-menu > li > a .sm-menu.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .side-navbar .login {

@@ -30,10 +30,46 @@ export const Navbar = () => {
     customScroll();
   }, [window.screenY]);
 
+  // for creating fake countries
   let fakeArray = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 11,
     12, 13, 14, 15, 16, 17, 18, 19, 20,
   ];
+
+  let handleSubMenu = (ref) => {
+    if (ref === "hosting") {
+      document
+        .getElementsByClassName("hosting-menu")[0]
+        .classList.toggle("flex");
+      document
+        .getElementsByClassName("hosting")[0]
+        .classList.toggle("caret");
+    }
+    if (ref === "vps") {
+      document
+        .getElementsByClassName("vps-menu")[0]
+        .classList.toggle("flex");
+      document
+        .getElementsByClassName("vps")[0]
+        .classList.toggle("caret");
+    }
+    if (ref === "email") {
+      document
+        .getElementsByClassName("email-menu")[0]
+        .classList.toggle("flex");
+      document
+        .getElementsByClassName("email")[0]
+        .classList.toggle("caret");
+    }
+    if (ref === "domain") {
+      document
+        .getElementsByClassName("domain-menu")[0]
+        .classList.toggle("flex");
+      document
+        .getElementsByClassName("domain")[0]
+        .classList.toggle("caret");
+    }
+  };
 
   return (
     <header
@@ -365,11 +401,11 @@ export const Navbar = () => {
         <ul className="side-menu">
           <li>
             <a href="#">
-              <div>
+              <div className="hosting" onClick={() => handleSubMenu("hosting")}>
                 <span>Hoisting</span>
-                <img src={caretIcon} alt="caret" />
+                <img src={caretIcon} alt="caret" id="caret" />
               </div>
-              <ul className="sm-menu">
+              <ul className="sm-menu hosting-menu">
                 <a href="#">
                   <div className="a-img">
                     <img src={webHosting} alt="img" />
@@ -399,11 +435,11 @@ export const Navbar = () => {
           </li>
           <li>
             <a href="#">
-              <div>
+              <div className="vps" onClick={() => handleSubMenu("vps")}>
                 <span>VPS</span>
                 <img src={caretIcon} alt="caret" />
               </div>
-              <ul className="sm-menu">
+              <ul className="sm-menu vps-menu">
                 <a href="#">
                   <div className="a-img">
                     <img src={vpsHosting} alt="img" />
@@ -433,11 +469,11 @@ export const Navbar = () => {
           </li>
           <li>
             <a href="#">
-              <div>
+              <div className="email" onClick={() => handleSubMenu("email")}>
                 <span>Email</span>
                 <img src={caretIcon} alt="caret" />
               </div>
-              <ul className="sm-menu">
+              <ul className="sm-menu email-menu">
                 <a href="#">
                   <div className="a-img">
                     <img src={googleImg} alt="img" />
@@ -459,11 +495,11 @@ export const Navbar = () => {
           </li>
           <li>
             <a href="#">
-              <div>
+              <div className="domain" onClick={() => handleSubMenu("domain")}>
                 <span>Domain</span>
                 <img src={caretIcon} alt="caret" />
               </div>
-              <ul className="sm-menu">
+              <ul className="sm-menu domain-menu">
                 <a href="#">
                   <div className="a-img">
                     <img src={domainImg} alt="img" />
@@ -496,7 +532,13 @@ export const Navbar = () => {
           <button className="primary-btn">Login</button>
         </div>
       </div>
-      <div className="language-sec" style={{right: showLanguages ? "0":"-120%", top: scrollY > 0 ? "90px":'100px'}}>
+      <div
+        className="language-sec"
+        style={{
+          right: showLanguages ? "0" : "-120%",
+          top: scrollY > 0 ? "90px" : "100px",
+        }}
+      >
         <div className="upper-lang">
           <div className="lang-search">
             <input type="text" placeholder="Search" />
