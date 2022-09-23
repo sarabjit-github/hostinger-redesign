@@ -321,7 +321,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: white;
 }
 
 @media (max-width: 991px) {
@@ -442,8 +441,6 @@
 }
 
 .features-sec .lower-block .mid-plan-heading {
-  height: 120px;
-  background: white;
   width: 100%;
   text-align: center;
 }

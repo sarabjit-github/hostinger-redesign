@@ -258,6 +258,12 @@ footer {
         @media (max-width: 576px) {
           gap: .5rem;
         }
+        .card{
+          transition: .3s ease;
+          &:hover{
+            transform: translateY(-5px);
+          }
+        }
         img {
           width: 35px;
           height: auto;

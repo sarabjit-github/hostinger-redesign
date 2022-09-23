@@ -229,7 +229,7 @@ $light-blue: #00d0ff;
     }
     .first {
       flex: 1;
-      background: white;
+      // background: white;
       @media (max-width: 991px) {
         order: 5;
       }
@@ -305,8 +305,8 @@ $light-blue: #00d0ff;
       }
     }
     .mid-plan-heading {
-      height: 120px;
-      background: white;
+      // height: 120px;
+      // background: white;
       width: 100%;
       text-align: center;
       h2 {

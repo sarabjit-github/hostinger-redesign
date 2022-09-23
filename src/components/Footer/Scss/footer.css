@@ -383,6 +383,16 @@ footer .payment-social .social .pc-con {
   }
 }
 
+footer .payment-social .social .pc-con .card {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+footer .payment-social .social .pc-con .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 footer .payment-social .social .pc-con img {
   width: 35px;
   height: auto;

@@ -14,8 +14,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <div className="bg2">
       <Partners />
       <HostingFeatures />
+      </div>
       <Services />
       <FindDomain />
       <IllusSection />
