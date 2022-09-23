@@ -8,13 +8,14 @@ import supportIllus from "../../img/active_support-illus.png";
 import { motion } from "framer-motion";
 
 export const IllusSection = () => {
+  const transition = { type: "spring", duration: 2, bounce: 0.3, delay:0.2 };
   return (
     <section className="section mid-sec">
       <div className="illus-container first-illus">
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="left"
         >
@@ -29,7 +30,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="right"
         >
@@ -40,7 +41,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="left"
         >
@@ -55,7 +56,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="right"
         >
@@ -66,7 +67,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="left"
         >
@@ -82,7 +83,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="right"
         >
@@ -93,7 +94,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="left"
         >
@@ -108,7 +109,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="right"
         >
@@ -119,7 +120,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="left"
         >
@@ -135,7 +136,7 @@ export const IllusSection = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+          transition={transition}
           viewport={{ once: true }}
           className="right"
         >

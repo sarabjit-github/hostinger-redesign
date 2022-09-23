@@ -512,7 +512,7 @@ export const Navbar = () => {
                 cy="18.3031"
                 r="15.8031"
                 stroke="#673de6"
-                stroke-width="5"
+                strokeWidth="5"
               />
               <line
                 x1="30.9531"
@@ -520,7 +520,7 @@ export const Navbar = () => {
                 x2="42.9527"
                 y2="42.4379"
                 stroke="#673de6"
-                stroke-width="5"
+                strokeWidth="5"
               />
             </svg>
           </div>
